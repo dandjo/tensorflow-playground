@@ -40,5 +40,5 @@ with tf.Session() as sess:
             out_: [0, -1, -2, -3]
         })
     # this will output the trained values of W and b
-    print(sess.run([W, b]))  # [array([-0.9999969], dtype=float32),
-    #                           array([0.9999908], dtype=float32)]
+    # the desired exact results are -1 and 1
+    print(sess.run([W, b]))  # [array([-0.9999969], dtype=float32), array([0.9999908], dtype=float32)]
