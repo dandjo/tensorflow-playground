@@ -17,5 +17,5 @@ with tf.Session() as sess:
 with tf.Session() as sess:
     output = sess.run(node3)
     print(output)  # 12
-    file_writer = tf.summary.FileWriter('../graph', sess.graph)
+    file_writer = tf.summary.FileWriter('graph', sess.graph)
     # run `tensorboard --logdir="graph"` in command line to show the result
